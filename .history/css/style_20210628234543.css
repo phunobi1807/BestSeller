@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+:root {
+    --color-primary: #007bff;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* top nav  */
+
+.top-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-nav__text {
+    padding: 0 20px;
+}
+
+.top-nav__text-link {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.top-nav__text, .top-nav__cart {
+    color: #767575;
+}
+
+.top-nav__icon {
+    color: var(--color-primary);
+}
+
+/* logo-menu  */
+
+.navigation-logo {
+    position: relative;
+}
+
+.navigation-logo__text-big {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.navigation-logo__text-small {
+    position: absolute;
+    bottom: 0;
+    left: 44%;
+    top: 70%;
+    color: #68a4e5;
+    font-weight: 500;
+}
+
+/* Danh sach menu  */
+
+.navigation-menu {
+    display: flex;
+    line-height: 78px;
+    list-style: none;
+    padding: 0 133px;
+}
+
+.navigation-menu__item--active {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.navigation-menu__item {
+    font-size: 18px;
+    color: #333;
+    margin: 0 20px;
+}
+
+/* Content  */
+
+.side-bar__title {
+    position: relative;
+    color: var(--color-primary);
+    line-height: 40px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.side-bar__title--one {}
+
+.product__title {
+    position: relative;
+    color: var(--color-primary);
+    font-weight: 700;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.side-bar__title::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 45px;
+    width: 100%;
+    height: 5px;
+    background-color: #e7e1e1;
+}
+
+.product__title::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 45px;
+    width: 100%;
+    height: 5px;
+    background-color: #e7e1e1;
+}
+
+/* Side bar */
+
+.side-bar__list {
+    padding-left: 0;
+}
+
+.side-bar__list-item {
+    position: relative;
+    padding: 6px 0;
+    color: #999;
+    font-weight: 500;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.side-bar__list-item::before {
+    content: '\2022 ';
+    color: #333;
+    padding-right: 0.5em;
+    font-size: 23px;
+}
+
+.side-bar__list-item::after {
+    position: absolute;
+    content: "";
+    left: -0px;
+    bottom: -3px;
+    width: 255px;
+    height: 1px;
+    background-color: #e7e1e1;
+}
+
+/* Products  */
+
+.product__row {
+    margin-top: 40px;
+}
+
+.border-primary {
+    color: red;
+}
